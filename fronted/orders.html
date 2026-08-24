@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#6c2cff">
+
+    <title>Order History</title>
+
+    <link rel="stylesheet"
+          href="../css/orders.css">
+
+</head>
+
+<body>
+
+
+<header class="orders-header">
+
+    <button
+        onclick="history.back()">
+
+        ←
+
+    </button>
+
+    <h2>
+        Order History
+    </h2>
+
+    <div></div>
+
+</header>
+
+
+<main class="orders-container">
+
+    <div
+        id="ordersLoading"
+        class="loading">
+
+        Orders loading...
+
+    </div>
+
+
+    <div
+        id="ordersList">
+    </div>
+
+
+    <div
+        id="noOrders"
+        class="no-orders"
+        style="display:none;">
+
+        <div>
+            📦
+        </div>
+
+        <h3>
+            কোনো Order নেই
+        </h3>
+
+        <p>
+            আপনার Diamond TopUp Order এখানে দেখা যাবে।
+        </p>
+
+        <a href="home.html">
+            Top Up করুন
+        </a>
+
+    </div>
+
+</main>
+
+
+<script
+    type="module"
+    src="../js/orders.js">
+</script>
+
+</body>
+</html>

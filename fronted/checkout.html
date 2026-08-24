@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#6c2cff">
+
+    <title>Recharge - Diamond Topup Zone</title>
+
+    <link rel="stylesheet"
+          href="../css/checkout.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="checkout-header">
+
+    <button
+        class="back-btn"
+        onclick="history.back()">
+
+        ←
+
+    </button>
+
+
+    <h2>
+        Recharge
+    </h2>
+
+
+    <a href="orders.html"
+       class="history-btn">
+
+        📦
+
+    </a>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="checkout-container">
+
+
+    <!-- =================================================
+         PACKAGE
+    ================================================= -->
+
+    <section class="recharge-card">
+
+        <div class="recharge-icon">
+            💎
+        </div>
+
+        <div>
+
+            <p class="small-title">
+                Recharge
+            </p>
+
+            <h1 id="packageName">
+                Recharge 100 TK
+            </h1>
+
+            <div class="package-price"
+                 id="packagePrice">
+
+                ৳100
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FREE FIRE UID
+    ================================================= -->
+
+    <section class="form-card">
+
+        <h3>
+            🎮 Free Fire UID
+        </h3>
+
+        <p>
+            যে ID-তে Diamond পাঠাতে চান
+        </p>
+
+        <input
+            type="text"
+            id="freeFireUid"
+            placeholder="Free Fire UID লিখুন"
+            inputmode="numeric"
+            autocomplete="off">
+
+    </section>
+
+
+    <!-- =================================================
+         PAYMENT METHOD
+    ================================================= -->
+
+    <section class="payment-section">
+
+        <h3>
+            Your Payment Method
+        </h3>
+
+        <p class="payment-subtitle">
+            Send Money গ্রহণ করা হবে
+        </p>
+
+
+        <div class="payment-methods">
+
+
+            <!-- BKASH -->
+
+            <button
+                class="payment-card"
+                data-method="bKash"
+                onclick="selectPayment('bKash')">
+
+                <img
+                    src="../assets/bkash.png"
+                    alt="bKash">
+
+                <span>
+                    bKash
+                </span>
+
+            </button>
+
+
+            <!-- NAGAD -->
+
+            <button
+                class="payment-card"
+                data-method="Nagad"
+                onclick="selectPayment('Nagad')">
+
+                <img
+                    src="../assets/nagad.png"
+                    alt="Nagad">
+
+                <span>
+                    Nagad
+                </span>
+
+            </button>
+
+
+            <!-- ROCKET -->
+
+            <button
+                class="payment-card"
+                data-method="Rocket"
+                onclick="selectPayment('Rocket')">
+
+                <img
+                    src="../assets/rocket.png"
+                    alt="Rocket">
+
+                <span>
+                    Rocket
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SEND MONEY
+    ================================================= -->
+
+    <section
+        class="send-money-card"
+        id="sendMoneyCard"
+        style="display:none;">
+
+        <div class="send-title">
+
+            <div class="send-icon">
+                💸
+            </div>
+
+            <div>
+
+                <h3>
+                    Send Money করুন
+                </h3>
+
+                <p id="selectedMethod">
+                    bKash
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="number-box">
+
+            <div>
+
+                <small>
+                    Send Money Number
+                </small>
+
+                <strong id="paymentNumber">
+                    01926829292
+                </strong>
+
+            </div>
+
+
+            <button
+                onclick="copyNumber()">
+
+                COPY
+
+            </button>
+
+        </div>
+
+
+        <div class="amount-info">
+
+            Send Money Amount
+
+            <strong id="sendAmount">
+                ৳100
+            </strong>
+
+        </div>
+
+
+        <!-- TRANSACTION ID -->
+
+        <label class="transaction-label">
+
+            Transaction ID
+
+        </label>
+
+        <input
+            type="text"
+            id="transactionId"
+            placeholder="Transaction ID লিখুন"
+            autocomplete="off">
+
+
+        <button
+            class="submit-btn"
+            id="submitBtn"
+            onclick="submitPayment()">
+
+            SUBMIT PAYMENT
+
+        </button>
+
+
+        <p
+            class="submit-error"
+            id="submitError">
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         SUCCESS
+    ================================================= -->
+
+    <section
+        class="success-card"
+        id="successCard"
+        style="display:none;">
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <h2>
+            আপনার পেমেন্ট
+            সাবমিট করা হয়েছে
+        </h2>
+
+        <p>
+            অনুগ্রহ করে অপেক্ষা করুন
+        </p>
+
+        <div class="countdown">
+
+            <span id="countdownNumber">
+                30
+            </span>
+
+            <small>
+                সেকেন্ড
+            </small>
+
+        </div>
+
+        <p class="success-note">
+            Admin আপনার payment যাচাই করছে।
+        </p>
+
+        <button
+            onclick="goOrders()"
+            class="history-link">
+
+            Order History দেখুন
+
+        </button>
+
+    </section>
+
+</main>
+
+
+<script
+    type="module"
+    src="../js/checkout.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090714">
+
+    <meta name="description" content="Diamond Topup Zone - Free Fire Diamond Top Up">
+
+    <title>Diamond Topup Zone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- =================================================
+         HEADER
+    ================================================== -->
+
+    <header class="top-header">
+
+        <a href="home.html" class="brand">
+
+            <div class="brand-logo">
+
+                <img src="../assets/logo.png" alt="Diamond Topup Zone">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>
+                    Diamond
+                </strong>
+
+                <span>
+                    TOPUP ZONE
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <div class="header-actions">
+
+            <button class="icon-btn" type="button" onclick="openSearch()" aria-label="Search">
+
+                🔍
+
+            </button>
+
+
+            <button class="icon-btn" type="button" onclick="goAccount()" aria-label="Orders">
+
+                📦
+
+            </button>
+
+
+            <button class="account-btn" id="accountBtn" type="button" onclick="goAccount()">
+
+                Login
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         SEARCH
+    ================================================== -->
+
+    <div class="search-area" id="searchBox">
+
+        <div class="search-inner">
+
+            <span class="search-icon">
+                🔍
+            </span>
+
+            <input type="search" id="searchInput" placeholder="Diamond package খুঁজুন..." autocomplete="off">
+
+            <button type="button" onclick="clearSearch()">
+
+                ×
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         ANNOUNCEMENT
+    ================================================== -->
+
+    <div class="announcement-wrap">
+
+        <div class="announcement-icon">
+            ⚡
+        </div>
+
+        <div class="announcement-track">
+
+            <div class="announcement-text">
+
+                আসসালামু আলাইকুম ❤️
+                Diamond Topup Zone-এ সবাইকে স্বাগতম।
+                ২৪ ঘন্টা Free Fire Diamond TopUp করতে পারবেন।
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section class="hero-section">
+
+        <div class="banner-wrapper" id="bannerWrapper">
+
+            <!-- Banner 1 -->
+            <div class="banner">
+                <img src="../assets/banner1.jpg" alt="Free Fire Diamond">
+            </div>
+
+            <!-- Banner 2 -->
+            <div class="banner">
+                <img src="../assets/banner2.jpg" alt="Free Fire">
+            </div>
+
+            <!-- Banner 3 -->
+            <div class="banner">
+                <img src="../assets/banner3.jpg" alt="Diamond Topup">
+            </div>
+
+            <!-- Banner 4 -->
+            <div class="banner">
+                <img src="../assets/banner4.jpg" alt="Gaming">
+            </div>
+
+            <!-- Banner 5 -->
+            <div class="banner">
+                <img src="../assets/banner5.jpg" alt="Topup Zone">
+            </div>
+
+        </div>
+
+        <div class="banner-dots" id="bannerDots"></div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         WELCOME
+    ================================================== -->
+
+    <section class="welcome-card">
+
+        <div class="welcome-icon">
+            💎
+        </div>
+
+        <div class="welcome-content">
+
+            <span>
+                WELCOME TO
+            </span>
+
+            <h2>
+                Diamond Topup Zone
+            </h2>
+
+            <p>
+                ২৪ ঘন্টা Free Fire Diamond
+                TopUp service।
+            </p>
+
+        </div>
+
+        <div class="online-dot">
+
+            <i></i>
+
+            Online
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         QUICK ACTIONS
+    ================================================== -->
+
+    <section class="quick-actions">
+
+        <button type="button" onclick="scrollToPackages()" class="quick-card">
+
+            <div class="quick-icon purple">
+                💎
+            </div>
+
+            <div>
+
+                <strong>
+                    Diamond
+                </strong>
+
+                <span>
+                    Top Up Now
+                </span>
+
+            </div>
+
+            <b>
+                →
+            </b>
+
+        </button>
+
+
+        <button type="button" onclick="goAccount()" class="quick-card">
+
+            <div class="quick-icon blue">
+                📦
+            </div>
+
+            <div>
+
+                <strong>
+                    My Orders
+                </strong>
+
+                <span>
+                    Order History
+                </span>
+
+            </div>
+
+            <b>
+                →
+            </b>
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PRODUCTS
+    ================================================== -->
+
+    <main class="products-area" id="packages">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>
+                    FREE FIRE
+                </span>
+
+                <h2>
+                    Diamond TopUp
+                </h2>
+
+            </div>
+
+            <div class="live-badge">
+
+                <i></i>
+
+                LIVE
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CATEGORY TABS
+        ================================================== -->
+
+        <div class="category-tabs">
+
+            <button type="button" class="category-tab active" onclick="showCategory('regular', this)">
+
+                <span>
+                    💎
+                </span>
+
+                Regular
+
+            </button>
+
+
+            <button type="button" class="category-tab" onclick="showCategory('membership', this)">
+
+                <span>
+                    👑
+                </span>
+
+                Membership
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             REGULAR DIAMOND PACKAGES
+        ================================================== -->
+
+        <section class="package-section active" id="regular">
+
+            <div class="package-heading">
+
+                <div>
+
+                    <h3>
+                        Regular
+                    </h3>
+
+                    <p>
+                        Instant Diamond Recharge
+                    </p>
+
+                </div>
+
+                <span>
+                    💎
+                </span>
+
+            </div>
+
+
+            <div class="package-grid">
+
+                <!-- 25 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-25.png" alt="25 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>25 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳25</strong>
+                            <button type="button" onclick="buyPackage('25 Diamonds', 25)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 50 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-50.png" alt="50 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>50 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳40</strong>
+                            <button type="button" onclick="buyPackage('50 Diamonds', 40)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 115 Diamonds -->
+                <article class="package-card featured">
+                    <div class="popular-label hot">POPULAR</div>
+                    <div class="diamond-image"><img src="../assets/diamond-115.png" alt="115 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>115 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳79</strong>
+                            <button type="button" onclick="buyPackage('115 Diamonds', 79)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 240 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="240 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>240 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳155 <del style="font-size: 11px; opacity: 0.6;">৳158</del></strong>
+                            <button type="button" onclick="buyPackage('240 Diamonds', 155)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 355 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="355 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>355 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳237</strong>
+                            <button type="button" onclick="buyPackage('355 Diamonds', 237)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 480 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="480 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>480 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳310 <del style="font-size: 11px; opacity: 0.6;">৳315</del></strong>
+                            <button type="button" onclick="buyPackage('480 Diamonds', 310)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 610 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="610 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>610 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳390 <del style="font-size: 11px; opacity: 0.6;">৳400</del></strong>
+                            <button type="button" onclick="buyPackage('610 Diamonds', 390)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 725 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="725 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>725 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳479</strong>
+                            <button type="button" onclick="buyPackage('725 Diamonds', 479)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 850 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="850 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>850 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳558</strong>
+                            <button type="button" onclick="buyPackage('850 Diamonds', 558)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 1090 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="1090 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>1090 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳715</strong>
+                            <button type="button" onclick="buyPackage('1090 Diamonds', 715)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 1240 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="1240 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>1240 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳780 <del style="font-size: 11px; opacity: 0.6;">৳800</del></strong>
+                            <button type="button" onclick="buyPackage('1240 Diamonds', 780)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2530 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="2530 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>2530 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳1,580 <del style="font-size: 11px; opacity: 0.6;">৳1,610</del></strong>
+                            <button type="button" onclick="buyPackage('2530 Diamonds', 1580)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5060 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="5060 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>5060 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳3,160 <del style="font-size: 11px; opacity: 0.6;">৳3,220</del></strong>
+                            <button type="button" onclick="buyPackage('5060 Diamonds', 3160)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7590 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="7590 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>7590 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳4,740 <del style="font-size: 11px; opacity: 0.6;">৳4,830</del></strong>
+                            <button type="button" onclick="buyPackage('7590 Diamonds', 4740)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10120 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="10120 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>10120 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳6,320 <del style="font-size: 11px; opacity: 0.6;">৳6,440</del></strong>
+                            <button type="button" onclick="buyPackage('10120 Diamonds', 6320)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12650 Diamonds -->
+                <article class="package-card">
+                    <div class="diamond-image"><img src="../assets/diamond-240.png" alt="12650 Diamonds"></div>
+                    <div class="package-info">
+                        <h4>12650 Diamonds</h4>
+                        <p>Free Fire</p>
+                        <div class="price-row">
+                            <strong>৳7,900 <del style="font-size: 11px; opacity: 0.6;">৳8,050</del></strong>
+                            <button type="button" onclick="buyPackage('12650 Diamonds', 7900)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MEMBERSHIP & SPECIAL OFFERS
+        ================================================== -->
+
+        <section class="package-section" id="membership">
+
+            <div class="package-heading weekly-heading">
+
+                <div>
+
+                    <h3>
+                        Membership & Pass
+                    </h3>
+
+                    <p>
+                        Weekly, Monthly & Level Up Pass
+                    </p>
+
+                </div>
+
+                <span>
+                    👑
+                </span>
+
+            </div>
+
+
+            <div class="package-grid">
+
+                <!-- Weekly Lite -->
+                <article class="package-card membership-card">
+                    <div class="membership-image">
+                        <img src="../assets/weekly.png" alt="Weekly Lite">
+                    </div>
+                    <div class="package-info">
+                        <h4>Weekly Lite</h4>
+                        <p>Free Fire Weekly</p>
+                        <div class="price-row">
+                            <strong>৳45</strong>
+                            <button type="button" onclick="buyPackage('Weekly Lite', 45)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Weekly Membership -->
+                <article class="package-card membership-card">
+                    <div class="membership-image">
+                        <img src="../assets/weekly.png" alt="Weekly Membership">
+                    </div>
+                    <div class="package-info">
+                        <h4>Weekly</h4>
+                        <p>Free Fire Weekly</p>
+                        <div class="price-row">
+                            <strong>৳155 <del style="font-size: 11px; opacity: 0.6;">৳159</del></strong>
+                            <button type="button" onclick="buyPackage('Weekly Membership', 155)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Monthly Membership -->
+                <article class="package-card membership-card">
+                    <div class="membership-image">
+                        <img src="../assets/monthly.png" alt="Monthly Membership">
+                    </div>
+                    <div class="package-info">
+                        <h4>Monthly</h4>
+                        <p>Free Fire Monthly</p>
+                        <div class="price-row">
+                            <strong>৳770 <del style="font-size: 11px; opacity: 0.6;">৳790</del></strong>
+                            <button type="button" onclick="buyPackage('Monthly Membership', 770)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Full Level Up Pass -->
+                <article class="package-card membership-card">
+                    <div class="membership-image">
+                        <img src="../assets/monthly.png" alt="Full Level Up Pass">
+                    </div>
+                    <div class="package-info">
+                        <h4>Full Level Up Pass</h4>
+                        <p>Level Up Pass</p>
+                        <div class="price-row">
+                            <strong>৳420</strong>
+                            <button type="button" onclick="buyPackage('Full Level Up Pass', 420)">Buy</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =================================================
+         HOW TO ORDER
+    ================================================== -->
+
+    <section class="how-section">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>
+                    EASY PROCESS
+                </span>
+
+                <h2>
+                    কিভাবে Order করবেন?
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div>
+
+                    <strong>
+                        Package Select
+                    </strong>
+
+                    <p>
+                        আপনার পছন্দের Diamond
+                        package নির্বাচন করুন।
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div>
+
+                    <strong>
+                        UID দিন
+                    </strong>
+
+                    <p>
+                        আপনার Free Fire UID
+                        সঠিকভাবে লিখুন।
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div>
+
+                    <strong>
+                        Payment করুন
+                    </strong>
+
+                    <p>
+                        bKash, Nagad অথবা Rocket
+                        দিয়ে Send Money করুন।
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div>
+
+                    <strong>
+                        Order Track
+                    </strong>
+
+                    <p>
+                        Order History থেকে
+                        status দেখুন।
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TRUST
+    ================================================== -->
+
+    <section class="trust-section">
+
+        <div class="trust-item">
+
+            <span>
+                ⚡
+            </span>
+
+            <strong>
+                Fast
+            </strong>
+
+            <small>
+                Service
+            </small>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <span>
+                🔒
+            </span>
+
+            <strong>
+                Secure
+            </strong>
+
+            <small>
+                Payment
+            </small>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <span>
+                🎧
+            </span>
+
+            <strong>
+                Support
+            </strong>
+
+            <small>
+                24/7
+            </small>
+
+        </div>
+
+
+        <div class="trust-item">
+
+            <span>
+                💎
+            </span>
+
+            <strong>
+                Trusted
+            </strong>
+
+            <small>
+                TopUp
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+
+            <img src="../assets/logo.png" alt="Logo">
+
+            <div>
+
+                <strong>
+                    Diamond Topup Zone
+                </strong>
+
+                <span>
+                    Free Fire Diamond TopUp
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="orders.html">
+                Orders
+            </a>
+
+            <a href="support.html">
+                Support
+            </a>
+
+            <a href="tutorial.html">
+                Tutorial
+            </a>
+
+        </div>
+
+
+        <p>
+            © 2026 Diamond Topup Zone.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         BOTTOM NAV
+    ================================================== -->
+
+    <nav class="bottom-nav">
+
+        <button type="button" class="bottom-item active" onclick="window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })">
+
+            <span>
+                ⌂
+            </span>
+
+            <small>
+                Home
+            </small>
+
+        </button>
+
+
+        <button type="button" class="bottom-item" onclick="scrollToPackages()">
+
+            <span>
+                💎
+            </span>
+
+            <small>
+                TopUp
+            </small>
+
+        </button>
+
+
+        <button type="button" class="bottom-item" onclick="goAccount()">
+
+            <span>
+                📦
+            </span>
+
+            <small>
+                Orders
+            </small>
+
+        </button>
+
+
+        <button type="button" class="bottom-item" onclick="window.location.href='support.html'">
+
+            <span>
+                ☎
+            </span>
+
+            <small>
+                Support
+            </small>
+
+        </button>
+
+    </nav>
+
+
+</div>
+
+
+<!-- =====================================================
+     HOME JS
+===================================================== -->
+
+<script src="../js/home.js"></script>
+
+
+<!-- =====================================================
+     ONLY HOME FUNCTIONS
+===================================================== -->
+
+<script>
+
+/* =====================================================
+   CATEGORY SWITCH
+===================================================== */
+
+/**
+ * @param {string} category
+ * @param {HTMLElement} [button]
+ */
+function showCategory(category, button) {
+
+    const sections =
+        document.querySelectorAll(
+            ".package-section"
+        );
+
+    const tabs =
+        document.querySelectorAll(
+            ".category-tab"
+        );
+
+
+    /* Hide all sections */
+
+    sections.forEach(function(section) {
+
+        section.classList.remove(
+            "active"
+        );
+
+    });
+
+
+    /* Remove all active tabs */
+
+    tabs.forEach(function(tab) {
+
+        tab.classList.remove(
+            "active"
+        );
+
+    });
+
+
+    /* Show selected section */
+
+    const target =
+        document.getElementById(
+            category
+        );
+
+
+    if (target) {
+
+        target.classList.add(
+            "active"
+        );
+
+    }
+
+
+    /* Activate selected button */
+
+    if (button) {
+
+        button.classList.add(
+            "active"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   SCROLL TO PACKAGES
+===================================================== */
+
+function scrollToPackages() {
+
+    const packages =
+        document.getElementById(
+            "packages"
+        );
+
+
+    if (packages) {
+
+        packages.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+        });
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color"
+          content="#6c2cff">
+
+    <title>Signup - Diamond Topup Zone</title>
+
+    <link rel="stylesheet"
+          href="../css/login.css">
+
+</head>
+
+
+<body>
+
+<div class="auth-page">
+
+    <div class="auth-card">
+
+        <img
+            src="../assets/logo.png"
+            class="auth-logo"
+            alt="Diamond Topup Zone">
+
+
+        <h1>
+            Create Account
+        </h1>
+
+
+        <p class="auth-subtitle">
+            Diamond Topup Zone
+        </p>
+
+
+        <form id="signupForm">
+
+
+            <!-- NAME -->
+
+            <div class="input-group">
+
+                <label>
+                    আপনার নাম
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="আপনার নাম লিখুন"
+                    required>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="আপনার Email লিখুন"
+                    required>
+
+            </div>
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+                <label>
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="কমপক্ষে ৬ অক্ষর"
+                    minlength="6"
+                    required>
+
+            </div>
+
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="input-group">
+
+                <label>
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Password আবার লিখুন"
+                    minlength="6"
+                    required>
+
+            </div>
+
+
+            <!-- SIGNUP -->
+
+            <button
+                type="submit"
+                class="auth-btn"
+                id="signupBtn">
+
+                Create Account
+
+            </button>
+
+
+        </form>
+
+
+        <p
+            id="signupMessage"
+            class="auth-message">
+        </p>
+
+
+        <div class="auth-links">
+
+            <a href="login.html">
+                আগে থেকেই Account আছে?
+                Login
+            </a>
+
+
+            <a href="home.html">
+                ← Home
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script
+    type="module"
+    src="../js/signup.js">
+</script>
+
+
+</body>
+
+</html>
